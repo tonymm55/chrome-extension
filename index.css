@@ -13,12 +13,34 @@ input {
     margin-bottom: 5px;
 }
 
-button {
-    background:#5f9341 ;
-    color: white;
+#input-btn,
+#delete-btn, #tab-btn {
     padding: 10px 20px;
-    border: none;
+    border: 1px solid #5f9341;
     font-weight: bold;
+    cursor: pointer; /* Add a cursor pointer to indicate interactivity */
+    transition: transform 0.1s ease; /* Add a smooth transition for the button effect */
+}
+
+#input-btn {
+    background: #5f9341;
+    color: white;
+}
+
+#delete-btn {
+    color: #5f9341;
+    background: white;
+}
+
+#tab-btn {
+    background: #5f9341;
+    color: white;
+}
+
+/* Apply the click effect on button press */
+#input-btn:active,
+#delete-btn:active {
+    transform: translateY(2px); /* Move the button down slightly */
 }
 
 ul {
